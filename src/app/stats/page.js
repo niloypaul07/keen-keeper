@@ -51,7 +51,7 @@ const StatsPage = () => {
 
       <div className="border-base-300 border py-10 px-4 rounded-lg bg-white shadow-sm flex flex-col items-center">
         <p className="font-bold text-lg text-[#2D4F4F] mb-4 text-center uppercase tracking-widest">
-          Usage Distribution
+          Usage Distributions
         </p>
 
         <PieChart width={300} height={350}>
