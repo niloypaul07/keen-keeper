@@ -43,7 +43,7 @@ const Timeline = () => {
 
       <div
         style={{ maxWidth: "200px" }}
-        className="mb-8 shadow-lg px-3 border border-base-300 rounded-lg py-2 w-[180px] "
+        className="mb-8  px-3 border  rounded-lg py-2 w-[180px] "
       >
         <select
           value={filter}

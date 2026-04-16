@@ -18,7 +18,7 @@ const StatsPage = () => {
     loadData();
   }, []);
 
-  if (!mounted) return <div className="p-10 text-center">salauddin Loading...</div>;
+  if (!mounted) return <div className="p-10 text-center">Loading...</div>;
 
   const chartData = [
     {
@@ -41,7 +41,7 @@ const StatsPage = () => {
   const isDataEmpty = chartData.every((item) => item.value === 0);
   const displayData = isDataEmpty ? [{ name: "No Data", value: 1 }] : chartData;
 
-  const COLORS = ["#3B82F6", "#22C55E", "#A855F7", "#E5E7EB"];
+  const COLORS = ["#3B82F6", "#244D3F", "#35846a", "#E5E7EB"];
 
   return (
     <div className="py-10 flex-1 max-w-7xl mx-auto px-4">
