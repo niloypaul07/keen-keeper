@@ -38,7 +38,7 @@ const DetailsPage = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto py-10 px-4">
       <div className="md:col-span-1 space-y-6">
-        <div className="bg-gray-200 rounded-lg shadow-lg border border-base-300 p-6">
+        <div className=" rounded-lg shadow-lg border border-base-300 p-6">
           <div className=" flex flex-col items-center text-center gap-2">
             {/* image */}
             <div className="relative w-20 h-20 mx-auto mb-4">
@@ -47,7 +47,7 @@ const DetailsPage = () => {
                 alt={friend.name}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="rounded-full object-cover ring-2 ring-primary ring-offset-2 group-hover:scale-105 transition duration-300 mt-2"
+                className="rounded-full object-cover ring-2  mt-2"
               />
             </div>
 
@@ -67,7 +67,7 @@ const DetailsPage = () => {
               {friend.tags?.map((tag, i) => (
                 <span
                   key={i}
-                  className="badge badge-primary badge-outline badge-sm font-semibold uppercase"
+                  className="badge  badge-outline badge-sm font-semibold uppercase"
                 >
                   {tag}
                 </span>
@@ -94,10 +94,10 @@ const DetailsPage = () => {
                 </div>
               </div>
 
-              <div className="  w-full">
-                <div className="flex btn items-center gap-2">
+              <div className="w-full">
+                <div className="flex btn items-center gap-2 text-red-600">
                   <AiOutlineDelete size={20} />
-                  <h1>Delete</h1>
+                  <h1 className="text-red-600">Delete</h1>
                 </div>
               </div>
             </div>
@@ -105,9 +105,9 @@ const DetailsPage = () => {
         </div>
       </div>
 
-      {/* --- RIGHT SIDE: Stats & Controls --- */}
+      
       <div className="md:col-span-2 space-y-6">
-        {/* ১. STATS SECTION */}
+        
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <div className="flex flex-col items-center w-full md:flex-1 py-6 border rounded-xl border-base-300 shadow-lg bg-base-100">
             <p className="text-2xl font-bold">{friend.days_since_contact}</p>
@@ -125,8 +125,8 @@ const DetailsPage = () => {
           </div>
         </div>
 
-        {/* ২. RELATIONSHIP GOAL SECTION */}
-        <div className="bg-base-300 p-6 rounded-xl shadow-md border border-base-300">
+        
+        <div className="p-6 rounded-xl shadow-md border border-base-300">
           <div className="flex items-center justify-between mb-2">
             <h2 className="font-bold">Relationship Goal</h2>
             <button className="btn btn-sm btn-outline rounded-lg">Edit</button>
@@ -134,15 +134,15 @@ const DetailsPage = () => {
           <p className="text-sm opacity-70">Connect every {friend.goal} days</p>
         </div>
 
-        {/* ৩. QUICK CHECK-IN */}
-        <div className="bg-base-300 p-6 rounded-xl shadow-md border border-base-300">
+        
+        <div className=" p-6 rounded-xl shadow-md border border-base-300">
           <h3 className="text-sm font-bold opacity-50 mb-6 uppercase tracking-widest">
             Quick Check-In
           </h3>
           <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-4">
             <div
               onClick={() => handleAddInteraction("Call")}
-              className="border border-base-300 flex-1 h-24 shadow-sm rounded-xl flex flex-col items-center justify-center gap-1 hover:shadow-xl hover:border-primary transition cursor-pointer py-2 group"
+              className="border flex-1 h-24 shadow-sm rounded-xl flex flex-col items-center justify-center gap-1   cursor-pointer py-2 group"
             >
               <MdAddIcCall
                 size={24}
@@ -153,7 +153,7 @@ const DetailsPage = () => {
 
             <div
               onClick={() => handleAddInteraction("Text")}
-              className="border border-base-300 flex-1 h-24 shadow-sm rounded-xl flex flex-col items-center justify-center gap-1 hover:shadow-xl hover:border-primary transition cursor-pointer py-2 group"
+              className="border  flex-1 h-24 shadow-sm rounded-xl flex flex-col items-center justify-center gap-1  cursor-pointer py-2 group"
             >
               <IoMdText
                 size={24}
@@ -164,7 +164,7 @@ const DetailsPage = () => {
 
             <div
               onClick={() => handleAddInteraction("Video")}
-              className="border border-base-300 flex-1 h-24 shadow-sm rounded-xl flex flex-col items-center justify-center gap-1 hover:shadow-xl hover:border-primary transition cursor-pointer py-2 group"
+              className="border  flex-1 h-24 shadow-sm rounded-xl flex flex-col items-center justify-center gap-1  cursor-pointer py-2 group"
             >
               <IoMdVideocam
                 size={24}
@@ -175,121 +175,7 @@ const DetailsPage = () => {
           </div>
         </div>
 
-        {/* ৪. RECENT INTERACTIONS */}
-        <div className="bg-base-300 p-3 md:p-6 rounded-xl shadow-lg border border-base-300">
-          <div className="flex justify-between items-center">
-            <div>
-              <h2 className="font-bold text-lg">Recent Interactions</h2>
-              <p className="text-xs opacity-50">View your last conversations</p>
-            </div>
-            <button className="btn btn-sm btn-ghost gap-2 border border-base-300 hover:border-primary rounded-xl px-4">
-              <MdHistory size={20} />
-              Full History
-            </button>
-          </div>
-
-          {/* ৪. TEXT CALL VIDEO  */}
-
-          <div className="mt-4 ">
-            <div className="flex justify-between items-center p-4 hover:shadow-md transition">
-              {/* LEFT */}
-              <div className="flex items-center gap-4">
-                {/* ICON */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-full">
-                  <IoMdText size={20} />
-                </div>
-
-                {/* TEXT */}
-                <div>
-                  <h3 className="font-semibold text-base">Text</h3>
-                  <p className="text-sm text-gray-500">
-                    Asked for career advice
-                  </p>
-                </div>
-              </div>
-
-              {/* RIGHT DATE */}
-              <div>
-                <p className="text-sm text-gray-400 font-medium">
-                  Jan 28, 2026
-                </p>
-              </div>
-            </div>
-
-            <div className="flex justify-between items-center p-4   hover:shadow-md transition">
-              {/* LEFT */}
-              <div className="flex items-center gap-4">
-                {/* ICON */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-full ">
-                  <IoMdVideocam size={20} />
-                </div>
-
-                {/* TEXT */}
-                <div>
-                  <h3 className="font-semibold text-base">Text</h3>
-                  <p className="text-sm text-gray-500">
-                    Asked for career advice
-                  </p>
-                </div>
-              </div>
-
-              {/* RIGHT DATE */}
-              <div>
-                <p className="text-sm text-gray-400 font-medium">
-                  Jan 28, 2026
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-between items-center p-4  hover:shadow-md transition">
-              {/* LEFT */}
-              <div className="flex items-center gap-4">
-                {/* ICON */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-full">
-                  <IoMdText size={20} />
-                </div>
-
-                {/* TEXT */}
-                <div>
-                  <h3 className="font-semibold text-base">Text</h3>
-                  <p className="text-sm text-gray-500">
-                    Asked for career advice
-                  </p>
-                </div>
-              </div>
-
-              {/* RIGHT DATE */}
-              <div>
-                <p className="text-sm text-gray-400 font-medium">
-                  Jan 28, 2026
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-between items-center p-4  hover:shadow-md transition">
-              {/* LEFT */}
-              <div className="flex items-center gap-4">
-                {/* ICON */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-full  ">
-                  <MdAddIcCall size={20} />
-                </div>
-
-                {/* TEXT */}
-                <div>
-                  <h3 className="font-semibold text-base">Text</h3>
-                  <p className="text-sm text-gray-500">
-                    Asked for career advice
-                  </p>
-                </div>
-              </div>
-
-              {/* RIGHT DATE */}
-              <div>
-                <p className="text-sm text-gray-400 font-medium">
-                  Jan 28, 2026
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

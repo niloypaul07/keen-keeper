@@ -4,10 +4,13 @@ import Link from "next/link";
 
 const FriendCard = ({ friend }) => {
   return (
+
+  
     <Link href={`/friends/${friend.id}`}>
-      <div className="group relative bg-linear-to-br from-base-100 to-base-200 border border-base-300 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 text-center overflow-hidden hover:-translate-y-1">
+      
+      <div className="group relative  border border-base-300 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 text-center overflow-hidden hover:-translate-y-1">
         {/* Glow effect */}
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-primary/10 to-transparent"></div>
+        <div className="absolute inset-0 opacity-0 "></div>
 
         {/* Image */}
         <div className="relative w-20 h-20 mx-auto mb-4">
@@ -17,12 +20,12 @@ const FriendCard = ({ friend }) => {
             loading="eager"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="rounded-full object-cover ring-2 ring-primary ring-offset-2 group-hover:scale-105 transition duration-300"
+            className="rounded-full "
           />
         </div>
 
         {/* Name */}
-        <h2 className="text-lg font-semibold text-base-content group-hover:text-primary transition">
+        <h2 className="text-lg font-semibold text-base-content">
           {friend.name}
         </h2>
 
@@ -36,7 +39,7 @@ const FriendCard = ({ friend }) => {
           {friend.tags.map((tag, idx) => (
             <span
               key={idx}
-              className="badge badge-outline badge-sm px-3 py-2 text-xs hover:bg-primary hover:text-white transition"
+              className="badge badge-outline badge-sm px-3 py-2 text-xs "
             >
               {tag}
             </span>
