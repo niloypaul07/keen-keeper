@@ -12,13 +12,16 @@ KeenKeeper is a modern friendship tracking web application that helps users main
 The app ensures you never lose touch with important people in your life.
 
 🚀 Technologies Used
+
 ⚛️ React.js / Next.js
 🎨 Tailwind CSS + Component Library
 🔁 React Router DOM / App Router (Next.js)
 📊 Recharts (for analytics)
 🔔 React Toastify (for notifications)
 📁 JSON (for mock data)
+
 ✨ Key Features
+
 👫 Friend Management
 Display friends in a responsive card layout
 Track days since last contact
