@@ -74,9 +74,10 @@ const DetailsPage = () => {
               ))}
             </div>
 
-            <p className="text-sm text-base-content/60 italic mb-8 leading-relaxed ">
+            <p className="text-sm text-base-content/60 italic  leading-relaxed ">
               {friend.bio}
             </p>
+            <p className="mb-5">{friend.email}</p>
 
             <div className="flex-col items-center gap-5 space-y-3 ">
               <div className="w-full">

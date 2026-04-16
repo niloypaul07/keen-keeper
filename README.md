@@ -1,21 +1,79 @@
- # 👥 KeenKeeper - Keep Your Friendships Alive
+ 👥 KeenKeeper — Keep Your Friendships Alive
 
-KeenKeeper is a professional friendship management application built to help users track their interactions and maintain long-term relationships.
+🌐 Live Project
 
-## 🚀 Live Demo
-[Live Site Link](https://ph-d72-keep-keeper.vercel.app/)
-github repository: https://github.com/salauddinhasan/ph-d72-keep-keeper
+🔗 Live Site: [\[Add Your Live Link Here\]](https://keen-keeper-friend.netlify.app/)
+💻 GitHub Repo: [\[Add Your Repo Link Here\]](https://github.com/niloypaul07/keen-keeper)
 
-## 🛠️ Technologies Used
-- **Framework:** Next.js (App Router)
-- **Styling:** Tailwind CSS & DaisyUI
-- **Charts:** Recharts (Pie Chart for Analytics)
-- **Notifications:** React-Toastify
-- **Deployment:** Vercel
+📌 Project Overview
 
-## ✨ Key Features
-1. **Friend Management:** Track days since last contact with status indicators (On-track, Overdue, etc.).
-2. **Interactive Timeline:** Log and filter interactions like Calls, Texts, and Video calls.
-3. **Friendship Analytics:** Visual representation of interaction history using Pie Charts.
-4. **Responsive UI:** Fully optimized for Mobile, Tablet, and Desktop.
-5. **Custom 404 & Loading:** Enhanced UX with custom error handling and loading animations.
+KeenKeeper is a modern friendship tracking web application that helps users maintain and strengthen their relationships. It allows users to track interactions, set communication goals, and monitor friendship health through analytics.
+
+The app ensures you never lose touch with important people in your life.
+
+🚀 Technologies Used
+⚛️ React.js / Next.js
+🎨 Tailwind CSS + Component Library
+🔁 React Router DOM / App Router (Next.js)
+📊 Recharts (for analytics)
+🔔 React Toastify (for notifications)
+📁 JSON (for mock data)
+✨ Key Features
+👫 Friend Management
+Display friends in a responsive card layout
+Track days since last contact
+Status indicators:
+🔴 Overdue
+🟡 Almost Due
+🟢 On Track
+👤 Friend Details Page
+View complete profile info (bio, email, tags, status)
+Relationship goal tracking
+Quick action buttons:
+📞 Call
+💬 Text
+🎥 Video
+⚡ Interaction Tracking
+Clicking Call/Text/Video:
+Adds entry to Timeline
+Shows toast notification
+Saves interaction history
+📜 Timeline Page
+View all interaction history
+Includes:
+📅 Date
+🔣 Icon (Call/Text/Video)
+📝 Title
+Filter by interaction type (Call/Text/Video)
+📊 Analytics (Stats Page)
+Visualize interaction data using Pie Chart
+Shows distribution of:
+Calls
+Texts
+Video calls
+🎯 Core Functional Sections
+🔝 Navbar (with active route highlight + icons)
+🎯 Banner with summary cards
+👫 Friends grid (4-column layout on large screens)
+👤 Friend Details (2-column layout)
+📜 Timeline system
+📊 Analytics page
+🦶 Footer
+📱 Responsive Design
+
+✅ Fully responsive across:
+
+📱 Mobile
+📟 Tablet
+💻 Desktop
+🛠️ Additional Features
+🔄 Loading spinner while fetching data
+🚫 Custom 404 Page
+🔔 Toast notifications on interactions
+🔁 Page reload works without errors (SPA routing handled)
+🧠 Challenge Features
+📊 Friendship Analytics with Pie Chart
+🔍 Timeline filtering (Call / Text / Video)
+🌟 Optional Improvements
+🔽 Sort timeline (Newest / Oldest)
+🔎 Search timeline by name or type

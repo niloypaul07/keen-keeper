@@ -28,7 +28,7 @@ const Banner = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
           <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-300">
-            <h3 className="text-3xl font-[#244D3F] mb-1">10</h3>
+            <h3 className="text-3xl font-[#244D3F] mb-1">12</h3>
             <p className="text-xs font-bold uppercase tracking-wider text-base-content/50">
               Total Friends
             </p>
