@@ -5,7 +5,7 @@ import Link from "next/link";
 const FriendCard = ({ friend }) => {
   return (
     <Link href={`/friends/${friend.id}`}>
-      <div className="group relative bg-gradient-to-br from-base-100 to-base-200 border border-base-300 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 text-center overflow-hidden hover:-translate-y-1">
+      <div className="group relative bg-linear-to-br from-base-100 to-base-200 border border-base-300 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 text-center overflow-hidden hover:-translate-y-1">
         {/* Glow effect */}
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-primary/10 to-transparent"></div>
 
@@ -47,10 +47,10 @@ const FriendCard = ({ friend }) => {
         <div
           className={`inline-block px-4 py-2 rounded-full text-xs font-semibold capitalize shadow-sm ${
             friend.status === "overdue"
-              ? "bg-red-100 text-red-600"
-              : friend.status === "almost due"
-                ? "bg-yellow-100 text-yellow-600"
-                : "bg-green-100 text-green-600"
+              ? "bg-[#EF4444] text-white"
+                  : friend.status === "almost due"
+                    ? "bg-amber-400 text-white"
+                    : "bg-[#244D3F] text-white"
           }`}
         >
           {friend.status}
