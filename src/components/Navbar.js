@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const getLinkStyle = (path) => {
     return pathname === path
-      ? "flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white shadow-md transition-all"  
+      ? "flex items-center gap-2 px-4 py-2 rounded-lg bg-[#244D3F] text-white shadow-md transition-all"  
       : "flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-base-200 transition-all text-gray-600"; 
   };
 
@@ -27,15 +27,15 @@ const Navbar = () => {
       <nav className="flex-none">
         <ul className="flex items-center gap-2 md:gap-4">
           <li>
-            <Link href="/" className={getLinkStyle("/")}>
-              <RiHome2Line size={20} />
-              <span className="hidden sm:inline">Home</span>
+            <Link href="/" className={getLinkStyle("/") }>
+              <RiHome2Line size={20} className="text-white"/>
+              <span className="hidden sm:inline text-white">Home</span>
             </Link>
           </li>
           <li>
             <Link href="/timeline" className={getLinkStyle("/timeline")}>
               <RiTimeLine size={20} />
-              <span className="hidden sm:inline">Timeline</span>
+              <span className="hidden sm:inline ">Timeline</span>
             </Link>
           </li>
           <li>
