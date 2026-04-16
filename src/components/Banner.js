@@ -8,7 +8,7 @@ const Banner = () => {
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-black text-base-content tracking-tight mb-6">
           Friends to keep close <br className="hidden md:block" />
-          <span className="text-primary">in your life</span>
+          <span className=" text-[#244D3F]">in your life</span>
         </h1>
 
         {/* Subtitle */}
@@ -19,7 +19,7 @@ const Banner = () => {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <button className="btn btn-primary btn-lg gap-2 shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1">
+          <button className="btn btn-primary bg-[#244D3F] btn-lg gap-2 shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1">
             <VscAdd className="text-2xl" />
             Add a Friend
           </button>

@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="navbar bg-base-100 shadow-sm border-b border-base-200 px-4 md:px-10 sticky top-0 z-50">
      
       <div className="flex-1">
-        <Link href="/" className="text-xl font-bold text-primary">
+        <Link href="/" className="text-xl font-bold  text-[#244D3F]">
           KeenKeeper
         </Link>
       </div>
@@ -28,8 +28,8 @@ const Navbar = () => {
         <ul className="flex items-center gap-2 md:gap-4">
           <li>
             <Link href="/" className={getLinkStyle("/") }>
-              <RiHome2Line size={20} className="text-white"/>
-              <span className="hidden sm:inline text-white">Home</span>
+              <RiHome2Line size={20} />
+              <span className="hidden sm:inline">Home</span>
             </Link>
           </li>
           <li>
