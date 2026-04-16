@@ -2,8 +2,8 @@
 
 🌐 Live Project
 
-🔗 Live Site: [\[Add Your Live Link Here\]](https://keen-keeper-friend.netlify.app/)
-💻 GitHub Repo: [\[Add Your Repo Link Here\]](https://github.com/niloypaul07/keen-keeper)
+🔗 Live Site: https://keen-keeper-friend.netlify.app/
+💻 GitHub Repo: https://github.com/niloypaul07/keen-keeper
 
 📌 Project Overview
 
