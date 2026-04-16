@@ -19,7 +19,7 @@ const Navbar = () => {
      
       <div className="flex-1">
         <Link href="/" className="text-xl font-bold  text-[#244D3F]">
-          KeenKeeper
+          <span className="text-black">Keen</span>Keeper
         </Link>
       </div>
 

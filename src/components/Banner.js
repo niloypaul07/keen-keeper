@@ -3,7 +3,7 @@ import { VscAdd } from "react-icons/vsc";
 
 const Banner = () => {
   return (
-    <section className="bg-base-200/50 py-16 md:py-24 px-6 rounded-3xl mt-6">
+    <section className=" py-16 md:py-24 px-6 rounded-3xl mt-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-black text-base-content tracking-tight mb-6">
@@ -17,42 +17,48 @@ const Banner = () => {
           nurture the relationships that matter most.
         </p>
 
-        {/* CTA Button */}
+        
         <div className="flex justify-center">
-          <button className="btn btn-primary bg-[#244D3F] btn-lg gap-2 shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1">
+          <button className="btn  bg-[#244D3F] btn-lg gap-2 shadow-lg text-white  ">
             <VscAdd className="text-2xl" />
             Add a Friend
           </button>
         </div>
 
-        {/* 4 Summary Cards (Requirement 2.2) */}
+        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
           <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-300">
+            <h3 className="text-3xl font-[#244D3F] mb-1">10</h3>
             <p className="text-xs font-bold uppercase tracking-wider text-base-content/50">
               Total Friends
             </p>
-            <h3 className="text-3xl font-black mt-1">10</h3>
+            
           </div>
-          <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-300 text-error">
-            <p className="text-xs font-bold uppercase tracking-wider opacity-70">
+          <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-300 ">
+            <h3 className="text-3xl font-[#244D3F] mb-1">3</h3>
+            <p className="text-xs font-bold uppercase tracking-wider text-base-content/50">
               On Track
             </p>
-            <h3 className="text-3xl font-black mt-1">3</h3>
+            
           </div>
-          <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-300 text-warning">
-            <p className="text-xs font-bold uppercase tracking-wider opacity-70">
+          <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-300 ">
+            <h3 className="text-3xl font-[#244D3F] mb-1">6</h3>
+            <p className="text-xs font-bold uppercase tracking-wider text-base-content/50">
              Need Attention
             </p>
-            <h3 className="text-3xl font-black mt-1">6</h3>
+            
           </div>
-          <div className="bg-base-100 ms:p-6 pt-6 rounded-2xl shadow-sm border border-base-300 text-success">
-            <p className="text-xs font-bold uppercase tracking-wider opacity-70">
+          <div className="bg-base-100 ms:p-6 pt-6 rounded-2xl shadow-sm border border-base-300 ">
+            <h3 className="text-3xl font-[#244D3F] mb-1">12</h3>
+            <p className="text-xs uppercase tracking-wider font-bold text-base-content/50">
               Interactions This Month
             </p>
-            <h3 className="text-3xl font-black mt-1">12</h3>
+            
           </div>
+          
         </div>
       </div>
+      <hr className="border-[#E9E9E9] my-10"></hr>
     </section>
   );
 };
