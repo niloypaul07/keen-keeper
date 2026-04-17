@@ -9,10 +9,10 @@ const FriendCard = ({ friend }) => {
     <Link href={`/friends/${friend.id}`}>
       
       <div className="group relative  border border-base-300 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 text-center overflow-hidden hover:-translate-y-1">
-        {/* Glow effect */}
+        
         <div className="absolute inset-0 opacity-0 "></div>
 
-        {/* Image */}
+        
         <div className="relative w-20 h-20 mx-auto mb-4">
           <Image
             src={friend.picture}
@@ -24,17 +24,17 @@ const FriendCard = ({ friend }) => {
           />
         </div>
 
-        {/* Name */}
+        
         <h2 className="text-lg font-semibold text-base-content">
           {friend.name}
         </h2>
 
-        {/* Days */}
+        
         <p className="text-sm text-gray-500 mb-2">
           {friend.days_since_contact} days ago
         </p>
 
-        {/* Tags */}
+        
         <div className="flex flex-wrap justify-center gap-2 mb-4">
           {friend.tags.map((tag, idx) => (
             <span

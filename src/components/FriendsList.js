@@ -13,13 +13,11 @@ const FriendsList = () => {
 
   return (
     <div className="my-5 px-4 max-w-7xl mx-auto">
-      <h2 className=" text-3xl mb-5">Your Friends</h2>
+      <h2 className=" text-3xl font-bold text-[#2d4f4f] mb-5">Your Friends</h2>
       {loading ? (
         <div className="h-64 flex flex-col items-center justify-center gap-4">
-          <span className="loading loading-spinner loading-lg text-primary"></span>
-          <p className="text-sm font-medium text-gray-400 tracking-widest uppercase">
-            
-          </p>
+          <span className="loading loading-spinner loading-lg text-[#2d4f4f]"></span>
+         
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
